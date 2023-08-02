@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirill Yakovenko</title>
+    <!-- Подключение ваших стилей, если есть -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стилизация выпадающих списков */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Ваше имя и заголовок резюме -->
+        <img src="" alt="Photo" class="profile-photo">
+        <h1>Kirill Yakovenko</h1>
+        <h2>CV</h2>
+    </header>
+
+    <nav>
+        <!-- Разделы с яркими заголовками для навигации -->
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="education">
+            <!-- Здесь добавлен выпадающий список для образования -->
+            <h3>Education</h3>
+            <div class="dropdown">
+                <span>Name of the institution</span>
+                <div class="dropdown-content">
+                    <p>Specialty / Direction - Graduation date</p>
+                    <!-- Вы можете добавить больше сведений о вашем образовании -->
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <!-- Здесь добавлен выпадающий список для опыта работы -->
+            <h3>Experience</h3>
+            <div class="dropdown">
+                <span>Company name</span>
+                <div class="dropdown-content">
+                    <p>Work start date - End date</p>
+                    <p>Description of responsibilities</p>
+                    <!-- Вы можете добавить больше сведений о вашем опыте работы -->
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <!-- Здесь добавлен выпадающий список для навыков -->
+            <h3>Skills</h3>
+            <div class="dropdown">
+                <span>Desktop Testing Automation</span>
+                <div class="dropdown-content">
+                    <p></p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span>WEB Testing Automation</span>
+                <div class="dropdown-content">
+                    <p></p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span>CI/CD (Jenkins)</span>
+                <div class="dropdown-content">
+                    <p></p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span>SQL</span>
+                <div class="dropdown-content">
+                    <p></p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span></span>
+                <div class="dropdown-content">
+                    <p>Test Run Analysis</p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span></span>
+                <div class="dropdown-content">
+                    <p>Code Review</p>
+                    <!-- Вы можете добавить больше деталей о вашем навыке -->
+                </div>
+            </div>
+            <!-- И так далее для других навыков -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Дополнительные данные в футере, если нужно -->
+    </footer>
+
+    <!-- Подключение ваших скриптов, если есть -->
+    <script src="scripts.js"></script>
+    <script>
+        // Анимация прокрутки страницы
+        window.addEventListener("scroll", () => {
+            const scrolled = window.scrollY;
+            const header = document.querySelector("header");
+            if (scrolled > 50) {
+                header.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+            } else {
+                header.style.backgroundColor = "transparent";
+            }
+        });
+    </script>
+</body>
+
+</html>
