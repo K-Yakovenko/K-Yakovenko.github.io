@@ -1,154 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirill Yakovenko</title>
-    <!-- Подключение ваших стилей, если есть -->
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Стилизация выпадающих списков */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>Yakovenko Kirill</title>
+	<style>
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+			background-color: #f7f7f7;
+		}
+		header {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		h1 {
+			font-size: 32px;
+			margin: 0;
+			padding: 5px 0;
+			color: #0072c6;
+		}
+		h2 {
+			font-size: 24px;
+			margin: 0;
+			padding: 5px 0;
+			color: #333;
+		}
+		h3 {
+			font-size: 20px;
+			margin: 0;
+			padding: 10px 0;
+			color: #0072c6;
+		}
+		h4 {
+			font-size: 18px;
+			margin: 0;
+			padding: 10px 0;
+			color: #333;
+		}
+		ul {
+			margin: 0;
+			padding: 0 0 0 20px;
+		}
+		p {
+			margin: 0;
+			padding: 10px 0;
+		}
+		section {
+			margin-bottom: 30px;
+		}
+		img {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			margin-top: 50px;
+		}
+	</style>
 </head>
-
 <body>
-    <header>
-        <!-- Ваше имя и заголовок резюме -->
-        <img src="" alt="Photo" class="profile-photo">
-        <h1>Kirill Yakovenko</h1>
-        <h2>CV</h2>
-    </header>
+	<header>
+		<img src="photo.jpg" alt="Photo">
+		<h1>Yakovenko Kirill</h1>
+		<h2>QA Automation Engineer</h2>
+	</header>
+	<main>
+		<section>
+			<p>As a highly skilled QA Automation Engineer with one year of professional experience, I have developed a strong expertise in testing both desktop applications and web-based software. My passion for ensuring software quality and my proficiency in test automation tools and frameworks have enabled me to contribute significantly to the project.</p>
+			<p>
+				With a keen eye for detail and a commitment to delivering high-quality results, I am adept at designing and implementing automated test scripts that efficiently validate functionality, performance, and reliability. My proven track record in web testing and desktop application verification makes me a valuable asset in ensuring the seamless performance of software systems. I am eager to leverage my skills and knowledge to further enhance the quality and efficiency of software products as a dedicated QA Automation Engineer.
+			</p>
+		</section>
+		<section>
+			<h3>Skills</h3>
+			<ul>
+				<li>Test Automation Tools: Proficient in using tools such as Selenium, TestStack.White, and NUnit for creating automated test scripts.</li>
+				<li>Web Testing: Skilled in testing web applications across different browsers and platforms to ensure compatibility and functionality.</li>
+				<li>Desktop Application Testing: Proficient in testing desktop applications to validate their performance and user experience.</li>
+				<li>Functional Testing: Well-versed in designing and executing functional test cases to verify software requirements.</li>
+				<li>Reliability Testing: Experienced in performing reliability and stability tests to identify potential issues.</li>
+				<li>Defect Tracking: Proficient in using defect tracking tools like JIRA to report and monitor software issues.</li>
+				<li>Agile Methodology: Familiar with Agile development practices and actively participating in Scrum meetings.</li>
+			</ul>
+		</section>
+<section>
+<h3>Experience</h3>
+<h4>QA Automation Engineer - A1QA</h4>
+<p>May 2022 - Current time</p>
+<p>A1QA is an outsourcing testing company</p>
+<p><b>Responsibilities</b></p>
+<ul>
+	<li>Designing and implementing automated test scripts and frameworks for various software applications.</li>
+	<li>Collaborating with cross-functional teams to identify testing requirements and create test cases.</li>
+	<li>Executing and maintaining automated test suites to ensure software quality and reliability.</li>
+	<li>Identifying and documenting software defects and tracking them to resolution.</li>
+	<li>Performing regression testing to validate software changes and enhancements.</li>
+	<li>Conducting thorough manual testing when required, including exploratory testing and usability testing.</li>
+	<li>Participating in code reviews to ensure code quality and adherence to automation best practices.</li>
+	<li>Researching and adopting new tools and technologies to improve test automation efficiency.</li>
+</ul>
 
-    <nav>
-        <!-- Разделы с яркими заголовками для навигации -->
-        <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-    </nav>
+<p><b>Tehnologies</b></p>
+<ul>
+	<li>C#</li>
+	<li>CI/CD (Jenkins)</li>
+	<li>SQL</li>
+	<li>Groovy, Powershell</li>
+	<li>Git</li>
+	<li>Virtual Machines (vSphere, AWS)</li>
+	<li>TestStack.White</li>
+	<li>Selenium</li>
+</ul>
+<br>
+<br>
 
-    <main>
-        <section id="education">
-            <!-- Здесь добавлен выпадающий список для образования -->
-            <h3>Education</h3>
-            <div class="dropdown">
-                <span>Name of the institution</span>
-                <div class="dropdown-content">
-                    <p>Specialty / Direction - Graduation date</p>
-                    <!-- Вы можете добавить больше сведений о вашем образовании -->
-                </div>
-            </div>
-        </section>
+</section>
+<section>
+<h3>Contacts</h3>
+<p>
+	<li>+995591703551</li>
+	<li>telegram: <a href = "https://t.me/alkovenko">t.me/alkovenko</a></li>
+	<li>email: k.a.yakovenko@icloud.com</li>
+</p>
+</section>
+</main>
 
-        <section id="experience">
-            <!-- Здесь добавлен выпадающий список для опыта работы -->
-            <h3>Experience</h3>
-            <div class="dropdown">
-                <span>Company name</span>
-                <div class="dropdown-content">
-                    <p>Work start date - End date</p>
-                    <p>Description of responsibilities</p>
-                    <!-- Вы можете добавить больше сведений о вашем опыте работы -->
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <!-- Здесь добавлен выпадающий список для навыков -->
-            <h3>Skills</h3>
-            <div class="dropdown">
-                <span>Desktop Testing Automation</span>
-                <div class="dropdown-content">
-                    <p></p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <span>WEB Testing Automation</span>
-                <div class="dropdown-content">
-                    <p></p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <span>CI/CD (Jenkins)</span>
-                <div class="dropdown-content">
-                    <p></p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <span>SQL</span>
-                <div class="dropdown-content">
-                    <p></p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <span></span>
-                <div class="dropdown-content">
-                    <p>Test Run Analysis</p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <span></span>
-                <div class="dropdown-content">
-                    <p>Code Review</p>
-                    <!-- Вы можете добавить больше деталей о вашем навыке -->
-                </div>
-            </div>
-            <!-- И так далее для других навыков -->
-        </section>
-    </main>
-
-    <footer>
-        <!-- Дополнительные данные в футере, если нужно -->
-    </footer>
-
-    <!-- Подключение ваших скриптов, если есть -->
-    <script src="scripts.js"></script>
-    <script>
-        // Анимация прокрутки страницы
-        window.addEventListener("scroll", () => {
-            const scrolled = window.scrollY;
-            const header = document.querySelector("header");
-            if (scrolled > 50) {
-                header.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            } else {
-                header.style.backgroundColor = "transparent";
-            }
-        });
-    </script>
 </body>
-
 </html>
